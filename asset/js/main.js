@@ -1,27 +1,20 @@
-// creare bottone che generi una griglia
-/*const containerE1 = document.getElementById('container');
-const maxCellsNumber = 100;
-const markup = '<div class="box"></div>';
+// costanti
+const generatorGridButton = document.querySelector('#generatorGrid');
+const container = document.querySelector('#container');
+const gridSize = 10; 
+const totalCells = gridSize * gridSize;
 
-for (let i = 0; i < maxCellsNumber; i++) {
-    containerE1.insertAdjacentHTML('beforeend', markup);
+// Funzione per generare la griglia
+function generateGrid() {
+     container.innerHTML = ''; 
+    for (let i = 0; i < totalCells; i++) {
+        const cell = document.createElement('div');
+        cell.textContent = i + 1; 
+        cell.classList.add('cell');
+        container.appendChild(cell);
+    }
 }
 
-const boxElements = document.getElementsByClassName('box');
+// listener per il click sul bottone
+generatorGridButton.addEventListener('click', generateGrid);
 
-for (let i = 0; i < boxElements.length; i++) {
-    const element = boxElements[i];
-    element.addEventListener('click', function() {
-        element.classList.toggle('red');
-    });
-}
-
-*/
-
-// Selezionare il bottone per generare la griglia
-const generatorGrid = document.querySelector('generatore griglia');
-
-// Aggiungere un listener per il click sul bottone
-generatorGrid.addEventListener(function(){
-
-})
