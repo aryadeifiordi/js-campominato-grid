@@ -12,13 +12,3 @@
     margin: auto;
 }
 
-.box{
-    width: calc(100% / 10); 
-    background-color: paleturquoise;
-    border: 2px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 14px; 
-    cursor: pointer;
-}

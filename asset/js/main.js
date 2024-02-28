@@ -18,11 +18,10 @@ for (let i = 0; i < boxElements.length; i++) {
 
 */
 
-const generatorGrid = document.querySelector('button');
+// Selezionare il bottone per generare la griglia
+const generatorGrid = document.querySelector('generatore griglia');
 
-// funzione con eventlistener
+// Aggiungere un listener per il click sul bottone
+generatorGrid.addEventListener(function(){
 
-generateGridButton.addEventListener('click', function(){
-
-    //selezionare il contenitore della griglia
-}
+})
