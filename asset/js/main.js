@@ -37,8 +37,7 @@ function generateRandomNumbers(count, min, max){
 function cellClickHandler (cell, cellNumber){
     clickedCells ++;
 
-    if (mushroomArray.includes(cellNumber)) {
-        // Aggiungi l'emoji per il fungo
+    if (mushroomArray.includes(cellNumber)) {  
         cell.innerHTML = '🍄';
         console.log('Hai calpestato un fungo! Game Over.');
         endGame();
@@ -51,10 +50,8 @@ function cellClickHandler (cell, cellNumber){
     }
 }
 
-// Funzione per concludere il gioco
-function endGame() {
-    // Aggiungi qui le azioni da eseguire quando il gioco termina
-    // Ad esempio, puoi resettare il gioco o visualizzare un messaggio di fine gioco.
+
+function endGame() { 
     alert('Gioco terminato!');
 }
 
