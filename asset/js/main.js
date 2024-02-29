@@ -3,10 +3,18 @@ const generatorGridButton = document.querySelector('#generatorGrid');
 const container = document.querySelector('#container');
 const gridSize = 10; 
 const totalCells = gridSize * gridSize;
+const mushroomCount = 16; 
+// array per memorizzare numeri dei funghi
+let mushroomArray = [];
+let clickedCells = 0;
 
 // Funzione per generare la griglia
 function generateGrid() {
-     container.innerHTML = ''; 
+     container.innerHTML = '';
+     clickedCells = 0;
+     // genero numeri casuali
+     mushroomArray = generateRandomNumbers(mushroomCount, 1, totalCells)
+      
     for (let i = 0; i < totalCells; i++) {
         const cell = document.createElement('div');
         cell.textContent = i + 1; 
