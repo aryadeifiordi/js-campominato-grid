@@ -20,4 +20,15 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    background-color: #fff;
+
+}
+
+.cell.clicked {
+    
+    background-color: blue; 
+}
+
+.cell.mushroom {
+    background-color: red;
 }

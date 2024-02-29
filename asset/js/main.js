@@ -14,7 +14,7 @@ function generateGrid() {
      clickedCells = 0;
      // genero numeri casuali
      mushroomArray = generateRandomNumbers(mushroomCount, 1, totalCells)
-      
+
     for (let i = 0; i < totalCells; i++) {
         const cell = document.createElement('div');
         cell.textContent = i + 1; 
@@ -26,7 +26,25 @@ function generateGrid() {
         container.appendChild(cell);
     }
 }
+// genero numeri casuali non ripetuti all'interno di un range
+function generateRandomNumbers(count, min, max){
+    const numbers = [];
+    while (numbers.length < count) {
+        const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+        if (!numbers.includes(randomNumber)) {
+            numbers.push(randomNumber);
+        }
+    }
+    return numbers
+}
 
+function cellClickHnadler (cell, cellNumber){
+    clickedCells ++;
+
+    if (mushroomArray.includes(cellNumber)){
+        cell.s
+    }
+}
 // listener per il click sul bottone
 generatorGridButton.addEventListener('click', generateGrid);
 
